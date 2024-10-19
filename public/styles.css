@@ -1,0 +1,172 @@
+/* Estilos Generales */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #1f1f1f;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #3d3d3d;
+}
+
+/* Contenido principal */
+main {
+    padding: 3rem;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Formularios */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    background: #f4f4f4;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+    border-color: #333;
+}
+
+button {
+    background: #333;
+    color: #fff;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #444;
+}
+
+/* Productos */
+.product {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #fff;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+    width: 180px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.product h3 {
+    font-size: 1.4rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.product p {
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.product button {
+    background: #555;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.product button:hover {
+    background: #666;
+}
+
+/* Footer */
+footer {
+    background: #1f1f1f;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
