@@ -11,20 +11,13 @@ app.use(express.json());
 // Servir archivos estáticos desde la carpeta 'public'
 app.use(express.static('public'));
 
-const dbConfig = {
-  host: '<mysql://root:MWuJAAIfutgkxCeOSHNXVBbLAAKGplel@junction.proxy.rlwy.net:11819/railway>',
-  user: '<root>',
-  password: '<MWuJAAIfutgkxCeOSHNXVBbLAAKGplel>',
-  database: '<railway>',
-  port: 3306 // Asegúrate de usar el puerto correcto
-};
-
 // MySQL connection
 const connection = mysql.createConnection({
   host: process.env.DB_HOST,
   user: process.env.DB_USER,
   password: process.env.DB_PASSWORD,
-  database: process.env.DB_NAME
+  database: process.env.DB_NAME,
+  port: process.env.DB_PORT || 3306
 });
 
 connection.connect((err) => {
